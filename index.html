@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <main>
+        <div class="leftBox margin3px">
+            <img class="invert close" src="./svgs/close.svg" alt="X">
+
+            <div class="homeBox greyBg">
+                <div class="logo"><img class="invert" src="./svgs/logo.svg" alt="logo"></div>
+                <ul>
+                    <li class="home"><img class="invert" src="./svgs/home.svg" alt="home">Home</li>
+                    <li class="search"><img class="invert" src="./svgs/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+
+            <div class="libraryBox greyBg">
+                <div class="library">
+                    <div class="yourLibrary">
+                        <a href="" class="libraryLeftBox">
+                            <img class="invert" src="./svgs/liabrary.svg" alt="">
+                            <p>Your Library</p>
+                        </a>
+                        <img class="invert" src="./svgs/plus.svg" alt="">
+                    </div>
+
+                    <div class="songsList">
+                        <ul></ul>
+                    </div>
+                </div>
+
+
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/sg-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/sg-en/privacy/">
+                            <span>Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/sg-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/sg-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/sg-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/sg-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                    <a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                        rel="noopener">
+                        <span>Cookies</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="rightBox greyBg ">
+            <div class="header">
+                <div class="nav">
+                    <img class="hamburger invert" src="./svgs/hamburger.svg" alt="hamburger">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 6L9 12L15 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.00005 6L15 12L9 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signUp">Sign up</button>
+                    <button class="logIn">Log in</button>
+                </div>
+            </div>
+
+            <div class="spotifyPlaylist">
+                <h1>Spotify PlayLists</h1>
+                <div class="cardContainer">
+
+                    <div data-folder="sami yousuf" class="card">
+                        <svg id="spotify-play-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Sami_Yusuf_2011_cropped.jpg/1200px-Sami_Yusuf_2011_cropped.jpg" alt="image">
+                        <h4>Sami Yousuf</h4>
+                        <p>Nasheeds</p>
+                    </div>
+
+                    <div data-folder="maher zain" class="card">
+                        <svg id="spotify-play-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0hshBaovktj7bEkfENWgLOrecUkuZPm-wfIarr8wscg&s" alt="image">
+                        <h4>Maher Zain</h4>
+                        <p>Nasheeds</p>
+                    </div>
+
+                    <div data-folder="muhammad ali muqit" class="card">
+                        <svg id="spotify-play-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="https://i1.sndcdn.com/avatars-IFnxlpBumf7EPwc2-TpAoug-t240x240.jpg" alt="image">
+                        <h4>Muhammad Ali Muqit</h4>
+                        <p>Nasheeds</p>
+                    </div>
+
+                </div>
+                <div class="playBar">
+                    <div class="infoBar">
+                        <div class="songInfo"></div>
+                        <div class="songButtons">
+                            <img width="25" id="previous" src="./svgs/previous.svg" alt="previous">
+                            <img width="25" id="play" src="./svgs/play.svg" alt="play">
+                            <img width="25" id="next" src="./svgs/next.svg" alt="next">
+                        </div>
+                        <div class="timeVol">
+                            <div class="songTime"></div>
+                            <div class="volume">
+                                <img src="./svgs/volume.svg" alt="volume">
+                                <div class="range">
+                                    <input type="range" name="volume" class="volumeRange">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekBar">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

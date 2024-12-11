@@ -1,0 +1,36 @@
+.redBorder {
+    border: 1px solid red;
+}
+
+.margin3px {
+    margin: 3px;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.greyBg {
+    background-color: #121212;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+::-webkit-scrollbar-corner {
+    background: #333;
+}
